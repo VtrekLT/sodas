@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+    android:id="@+id/nav_plants"
+    android:icon="@drawable/ic_local_florist_black_24dp"
+    android:title="@string/plants_navigation"></item>
+
+    <item
+        android:id="@+id/nav_plot"
+        android:icon="@drawable/ic_view_module_black_24dp"
+        android:title="@string/plot_navigation"></item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout_title"></item>
+
+
+
+</menu>

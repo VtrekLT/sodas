@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "798567730832",
+    "firebase_url": "https://bakis-26cdf.firebaseio.com",
+    "project_id": "bakis-26cdf",
+    "storage_bucket": "bakis-26cdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798567730832:android:80f716f332e96b50ba5215",
+        "android_client_info": {
+          "package_name": "com.example.bakis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798567730832-9f8lkpsfu7ib7urjt8ggtn4td9qifgra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxpqhl9xMZaZe7_Jc_WIcq-T9-2oVZdr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798567730832-9f8lkpsfu7ib7urjt8ggtn4td9qifgra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

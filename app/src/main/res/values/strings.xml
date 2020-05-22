@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Sodo programėlė</string>
+    <string name="home_navigation">Namai</string>
+    <string name="info_navigation">Info</string>
+    <string name="search_navigation">Paieška</string>
+    <string name="plants_navigation">Augalai</string>
+    <string name="plot_navigation">Planas</string>
+    <string name="title_activity_settings">Nustatymai</string>
+    <string name="logout_title">Atsijungti</string>
+    <string name="notes_navigation">Užrašai</string>
+
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Komunikacija</string>
+    <string name="location_header">Vieta</string>
+
+    <!-- Messages Preferences -->
+    <string name="send_mail_title">Siųsti laišką kūrėjui</string>
+    <string name="ranking">Prašymai, pastabos, komentarai (siųsti čia)</string>
+
+    <!-- Location Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+</resources>

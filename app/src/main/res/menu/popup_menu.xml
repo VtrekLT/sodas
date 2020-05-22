@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fence"
+        android:title="Tvora"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/fence1"
+                android:title="Medinė tvora horizontaliai"/>
+            <item android:id="@+id/fence2"
+                android:title="Medinė tvora vertikaliai"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/texture"
+        android:title="Pagrindas"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/texture1"
+                android:title="Žemės pagrindas"/>
+            <item android:id="@+id/texture2"
+                android:title="Akmeninis pagrindas"/>
+            <item android:id="@+id/texture3"
+                android:title="Medinės lentos"/>
+
+        </menu>
+    </item>
+
+    <item
+    android:id="@+id/grass"
+    android:title="Žolė"
+    app:showAsAction="never">
+
+    <menu>
+        <item android:id="@+id/grass1"
+            android:title="Graži veja"/>
+        <item android:id="@+id/grass2"
+            android:title="Apaugusi žolė"/>
+    </menu>
+</item>
+
+
+    <item
+        android:id="@+id/crops"
+        android:title="Pasėliai"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/crop1"
+                android:title="Brokoliai"/>
+            <item android:id="@+id/crop2"
+                android:title="Briuselio kopūstai"/>
+            <item android:id="@+id/crop3"
+                android:title="Kopūstas"/>
+            <item android:id="@+id/crop4"
+                android:title="Žiedinis kopūstas"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/flowers"
+        android:title="Gėlės"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/flower1"
+                android:title="Ramunė"/>
+            <item android:id="@+id/flower2"
+                android:title="Medetka"/>
+            <item android:id="@+id/flower3"
+                android:title="Nasturtė"/>
+            <item android:id="@+id/flower4"
+                android:title="Saulėgrąža"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/berries"
+        android:title="Uogos"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/berrie1"
+                android:title="Mėlynės"/>
+            <item android:id="@+id/berrie2"
+                android:title="Avietės"/>
+            <item android:id="@+id/berrie3"
+                android:title="Braškės"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/greens"
+        android:title="Žalumynai"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/green1"
+                android:title="Salotos"/>
+            <item android:id="@+id/green2"
+                android:title="Špinatai"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/herbs"
+        android:title="Žolelės"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/herb1"
+                android:title="Mėtos"/>
+            <item android:id="@+id/herb2"
+                android:title="Bazilikas"/>
+            <item android:id="@+id/herb3"
+                android:title="Krapai"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/legumes"
+        android:title="Ankštiniai"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/legume1"
+                android:title="Pupelės"/>
+            <item android:id="@+id/legume2"
+                android:title="Žirniai"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/vegetables"
+        android:title="Daržovės"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/vegetable1"
+                android:title="Paprika"/>
+            <item android:id="@+id/vegetable2"
+                android:title="Pomidorai"/>
+            <item android:id="@+id/vegetable3"
+                android:title="Pomidorai(cherry)"/>
+            <item android:id="@+id/vegetable4"
+                android:title="Pomidorai(slyviniai)"/>
+            <item android:id="@+id/vegetable5"
+                android:title="Baklažanas"/>
+            <item android:id="@+id/vegetable6"
+                android:title="Aštrieji pipirai"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/roots"
+        android:title="Šakninės daržovės"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/root1"
+                android:title="Ridikai"/>
+            <item android:id="@+id/root2"
+                android:title="Morkos"/>
+            <item android:id="@+id/root3"
+                android:title="Česnakas"/>
+            <item android:id="@+id/root4"
+                android:title="Svogūnai"/>
+            <item android:id="@+id/root5"
+                android:title="Bulvės"/>
+            <item android:id="@+id/root6"
+                android:title="Burokai"/>
+        </menu>
+    </item>
+</menu>
