@@ -36,6 +36,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.title.setText(models.get(position).getTitle());
         holder.description.setText(models.get(position).getDescription());
+        holder.about.setText(models.get(position).getAbout());
+        holder.growth.setText(models.get(position).getGrowth());
         Picasso.get().load(models.get(position).getImage()).into(holder.image);
             holder.btn.setVisibility(View.VISIBLE);
             holder.onClick(position);
@@ -51,7 +53,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView title, description;
+        TextView title, description, about, growth;
         ImageView image;
         Button btn;
 
@@ -59,8 +61,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.rTitle);
             description = (TextView) itemView.findViewById(R.id.rDescription);
+            about = (TextView) itemView.findViewById(R.id.rAbout);
+            growth = (TextView) itemView.findViewById(R.id.rGrowth);
             image = (ImageView) itemView.findViewById(R.id.rImageView);
-            btn = (Button) itemView.findViewById(R.id.checkDetails);
+            btn = (Button) itemView.findViewById(R.id.daugiau);
 
         }
 

@@ -14,10 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -37,7 +39,7 @@ public class ListActivity extends AppCompatActivity {
     DatabaseReference reference;
     ArrayList<Model> list;
     MyAdapter adapter;
-    String searchText;
+    SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,8 @@ public class ListActivity extends AppCompatActivity {
         //recyclerview
 
         recyclerView = (RecyclerView) findViewById(R.id.recylerView);
-        recyclerView.setHasFixedSize(true); // nebuvo sito pas antra
+        recyclerView.setHasFixedSize(true);
+        // nebuvo sito pas antra
 
         //set layout as LinearLayout
 
@@ -63,13 +66,11 @@ public class ListActivity extends AppCompatActivity {
 
         //send Query to FirebaseDatabase
         firebaseDatabase = FirebaseDatabase.getInstance();
-        reference = firebaseDatabase.getReference("Data"); // jei neveikia galima be child i reference rasyt patha .child("Data")
+        reference = firebaseDatabase.getReference("Data");
+        searchView = findViewById(R.id.search);// jei neveikia galima be child i reference rasyt patha .child("Data")
 
         //search data
-        //private void firebaseSearch(String searchText){
-          //  Query firebaseSearchQuery = reference.orderByChild("title").startAt(searchText).endAt(searchText+"\uf8ff");
-            //FirebaseRecyclerAdapter<Model, ViewHolder> firebaseRecyclerAdapter =
-        //}
+
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -87,9 +88,16 @@ public class ListActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(ListActivity.this, "Kažkas blogai",Toast.LENGTH_SHORT).show();
             }
+
         });
+
+
         //recyclerView.setAdapter(adapter);
+
+
     }
+
+
 
 
 }

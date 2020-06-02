@@ -30,7 +30,7 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity {
     private static final String TAG = "Register" ;
-    EditText mFullName, mEmail, mPassword,mPhone;
+    EditText mFullName, mEmail, mPassword;
     Button mRegisterBtn;
     TextView mLoginBtn;
     FirebaseAuth fAuth;
@@ -46,7 +46,6 @@ public class Register extends AppCompatActivity {
         mFullName = findViewById(R.id.fullName);
         mEmail = findViewById(R.id.email);
         mPassword = findViewById(R.id.password);
-        mPhone = findViewById(R.id.phone);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.signIn);
 
@@ -66,7 +65,6 @@ public class Register extends AppCompatActivity {
                 final String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 final String fullName = mFullName.getText().toString();
-                final String phone = mPhone.getText().toString();
 
                 if(TextUtils.isEmpty(email)) {
                     mEmail.setError("Reikalingas elektroninis paštas");
@@ -95,7 +93,6 @@ public class Register extends AppCompatActivity {
                             Map<String,Object> user = new HashMap<>();
                             user.put("fName", fullName);
                             user.put("email", email);
-                            user.put("phone", phone);
 
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {

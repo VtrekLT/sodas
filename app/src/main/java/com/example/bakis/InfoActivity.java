@@ -20,8 +20,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class InfoActivity extends AppCompatActivity {
 
-    Button listBtn, buttonPlants, plotBtn, listShow;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,27 +35,7 @@ public class InfoActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
-
     }
-
-    public void logout (View view) {
-        FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(),Login.class));
-        finish();
-    }
-
-    public void plantShow(View view) {
-        startActivity(new Intent(getApplicationContext(), Planttas.class));
-        finish();
-    }
-
-    public void goMain (View view) {
-        startActivity(new Intent(getApplicationContext(),Plant.class));
-    }
-
-
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

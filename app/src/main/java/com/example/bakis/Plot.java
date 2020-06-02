@@ -3,6 +3,7 @@ package com.example.bakis;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -13,17 +14,27 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
+
+import static java.lang.System.load;
 
 public class Plot extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener{
 
     String ids = "";
+    FirebaseAuth fAuth;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plot);
+        //fireStore = FirebaseFirestore.getInstance();
+        //fAuth = FirebaseAuth.getInstance();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -39,6 +50,7 @@ public class Plot extends AppCompatActivity implements PopupMenu.OnMenuItemClick
                 }
             });
         }
+        StorageReference storageRef = FirebaseStorage.getInstance().getReference();
 
     }
 
@@ -52,7 +64,7 @@ public class Plot extends AppCompatActivity implements PopupMenu.OnMenuItemClick
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
-        final ImageView square = ((ImageView)findViewById(getResources().getIdentifier(ids,"id", this.getPackageName())));
+        ImageView square = ((ImageView)findViewById(getResources().getIdentifier(ids,"id", this.getPackageName())));
         switch(item.getItemId()) {
 
             case R.id.fence1:
@@ -210,4 +222,5 @@ public class Plot extends AppCompatActivity implements PopupMenu.OnMenuItemClick
 
         }
     }
+
 }

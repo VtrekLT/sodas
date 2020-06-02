@@ -2,7 +2,7 @@ package com.example.bakis;
 
 public class Model {
 
-    String title, image, description; // these names match with firebase database
+    String title, image, description, about, growth; // these names match with firebase database
 
     //constructor
     public Model() {
@@ -32,5 +32,21 @@ public class Model {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public void setAbout(String about) {
+        this.about = about;
+    }
+
+    public String getGrowth() {
+        return growth;
+    }
+
+    public void setGrowth(String growth) {
+        this.growth = growth;
     }
 }
